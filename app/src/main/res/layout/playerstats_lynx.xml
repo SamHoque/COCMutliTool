@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/player_Tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_editbox"
+        android:ems="10"
+        android:hint="@string/xxxxxx"
+        android:inputType="textNoSuggestions"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="#666666"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <Button
+        android:id="@+id/search_Tag"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/player_Tag"
+        android:layout_alignBottom="@+id/player_Tag"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/player_name"
+        android:layout_toRightOf="@+id/player_name"
+        android:background="@drawable/button_selector"
+        android:text="@string/search"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/search_Tag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="@string/player_tag"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <LinearLayout
+        android:id="@+id/advance_sarch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/search_Tag"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/advanced_search"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/advance_sarch"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/player_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:background="@drawable/bg_editbox"
+        android:ems="10"
+        android:hint="@string/lynx"
+        android:inputType="textNoSuggestions"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="#666666"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/player_name_exact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player_name"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/player_name"
+        android:layout_toEndOf="@+id/player_name"
+        android:layout_toRightOf="@+id/player_name"
+        android:text="@string/exact_name"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/player_name"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/minimum_player_level"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/player_min_trophies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:background="@drawable/bg_editbox"
+        android:ems="10"
+        android:hint="@string/_5000"
+        android:inputType="number"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="#666666"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/player_min_exp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="@string/minimum_player_trophies"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/player_min_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6"
+        android:background="@drawable/bg_editbox"
+        android:ems="10"
+        android:hint="@string/_500"
+        android:inputType="number"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="#666666"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/player_min_exp"
+        android:gravity="center_vertical"
+        android:text="@string/minimum_player_league"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <Spinner
+        android:id="@+id/player_min_league"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/player_min_exp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/player_min_exp"
+        android:layout_below="@+id/textView7"
+        android:popupBackground="#424242"
+        android:textColor="@android:color/white" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/player_name_league"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player_min_league"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/player_min_league"
+        android:layout_toEndOf="@+id/player_min_league"
+        android:layout_toRightOf="@+id/player_min_league"
+        android:text="@string/exact_league"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/search_advance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/player_name_league"
+        android:layout_alignRight="@+id/player_name_league"
+        android:layout_below="@+id/player_min_league"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/search"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

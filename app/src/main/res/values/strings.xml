@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">COC Multi Tool</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="stats">Stats</string>
+    <string name="xp_calculator">XP Calculator</string>
+    <string name="gems_calculator">Gems Calculator</string>
+    <string name="social">Social</string>
+    <string name="twitter">Twitter</string>
+    <string name="website">Website</string>
+    <string name="calculate">Calculate</string>
+    <string name="xp_from">XP From</string>
+    <string name="xp_to">XP TO</string>
+    <string name="search">Search</string>
+    <string name="xxxxxx">#XXXXXX</string>
+    <string name="player_tag">Player Tag</string>
+    <string name="advanced_search">[Advanced Search]</string>
+    <string name="player_name">Player Name</string>
+    <string name="lynx">Lynx</string>
+    <string name="exact_league">Exact League</string>
+    <string name="minimum_player_league">Minimum Player League</string>
+    <string name="_500">500</string>
+    <string name="minimum_player_trophies">Minimum Player Trophies</string>
+    <string name="_5000">5000</string>
+    <string name="minimum_player_level">Minimum Player Level</string>
+    <string name="exact_name">Exact Name</string>
+</resources>

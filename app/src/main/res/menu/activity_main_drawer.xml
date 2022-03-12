@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_stats"
+            android:icon="@drawable/stats_lynx"
+            android:title="@string/stats" />
+        <item
+            android:id="@+id/nav_xp"
+            android:icon="@drawable/exp_lynx"
+            android:title="@string/xp_calculator" />
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_twitter"
+                android:title="@string/twitter" />
+            <item
+                android:id="@+id/nav_website"
+                android:title="@string/website" />
+        </menu>
+    </item>
+
+</menu>
